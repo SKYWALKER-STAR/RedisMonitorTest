@@ -1,2 +1,9 @@
+##########################################################################################################
+# Makefile for this programs
+##########################################################################################################
+
 all:main.c
-	gcc -o main main.c -lhiredis -lpthread -L /usr/local/lib
+	gcc -o main main.c client.c -lhiredis -lpthread -L /usr/local/lib
+
+clean:
+	rm -rf main
